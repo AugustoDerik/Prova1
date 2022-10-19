@@ -8,19 +8,31 @@ public class Mapeamento {
 
 	public void mapear() {
 		for (int i = 1, j = 1; j <= 15; j++)
-			posicao[i][j] = "trave superior";
+			posicao[i][j] = "t";
 		for (int i = 1, j = 1; i <= 8; i++)
-			posicao[i][j] = "trave esquerda";
+			posicao[i][j] = "t";
 		for (int i = 1, j = 15; i <= 8; i++)
-			posicao[i][j] = "trave direita";
+			posicao[i][j] = "t";
 		for (int i = 0, j = 0; j <= 16; j++)
-			posicao[i][j] = "bola fora";
+			posicao[i][j] = "0";
 		for (int i = 1, j = 0; i <= 8; i++)
-			posicao[i][j] = "bola fora";
+			posicao[i][j] = "0";
 		for (int i = 0, j = 16; i <= 8; i++)
-			posicao[i][j] = "bola fora";
-		posicao[2][2] = "angulo";
-		posicao[2][15] = "angulo";
+			posicao[i][j] = "0";
+		posicao[2][2] = "g";
+		posicao[2][14] = "g";
+	}
+
+	public void imprimir() {
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 17; j++) {
+				if (posicao[i][j] == null)
+					System.out.print("- ");
+				else
+					System.out.print(posicao[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 
 	public String getPosicao(int x, int y) {

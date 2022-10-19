@@ -13,6 +13,7 @@ public class Goleiro {
 	private int coordenacao;
 	private int forca;
 	private int equilibrio;
+	private int AAG;
 
 	public Goleiro(int id, String nome, int v, int flex, int ag, int c, int f, int eq) {
 		this.id = id;
@@ -24,21 +25,23 @@ public class Goleiro {
 		forca = f;
 		equilibrio = eq;
 		listaChute = new ArrayList<Chute>();
+		
+		AAG = ((v * 3) + (flex * 2) + (ag * 3) + (c * 2) + (f) + (eq * 2)) / 8;
 	}
 
-	public int AAG(int v, int flex, int ag, int c, int f, int eq) {
-
-		velocidade = v;
-		flexibilidade = flex;
-		agilidade = ag;
-		coordenacao = c;
-		forca = f;
-		equilibrio = eq;
-
-		int AAG = (v * 3) + (flex * 2) + (ag * 3) + (c * 2) + (f) + (eq * 2) / 8;
-
-		return AAG;
-	}
+//	public int AAG(int v, int flex, int ag, int c, int f, int eq) {
+//
+//		velocidade = v;
+//		flexibilidade = flex;
+//		agilidade = ag;
+//		coordenacao = c;
+//		forca = f;
+//		equilibrio = eq;
+//
+//		int AAG = ((v * 3) + (flex * 2) + (ag * 3) + (c * 2) + (f) + (eq * 2)) / 8;
+//
+//		return AAG;
+//	}
 
 	public void addChute(Chute c) {
 		listaChute.add(c);
@@ -114,6 +117,14 @@ public class Goleiro {
 
 	public void setEquilibrio(int equilibrio) {
 		this.equilibrio = equilibrio;
+	}
+
+	public int getAAG() {
+		return AAG;
+	}
+
+	public void setAAG(int aAG) {
+		AAG = aAG;
 	}
 
 }
