@@ -35,7 +35,11 @@ public class Mapeamento {
 		}
 	}
 
-	public String getPosicao(int x, int y) {
+	public String[][]getPosicao() {
+		return posicao;
+	}
+	
+	public String getLugar(int x, int y) {
 		return posicao[x][y];
 	}
 

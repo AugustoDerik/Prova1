@@ -71,76 +71,159 @@ public class Main {
 		return aux;
 
 	}
-	
-	public static ArrayList<Goleiro> carregarGoleiro(){
-		
+
+	public static ArrayList<Goleiro> carregarGoleiro() {
+
 		ArrayList<Goleiro> aux = new ArrayList<Goleiro>();
-		
-		Goleiro g1 = new Goleiro(1, "Pratik Skaggs", 5,7,8,9,6,6);
+
+		Goleiro g1 = new Goleiro(1, "Pratik Skaggs", 5, 7, 8, 9, 6, 6);
 		g1.setListaChute(carregarChute());
 		aux.add(g1);
-		Goleiro g2 = new Goleiro(2, "Uehudah Hack", 9,6,8,8,7,10);
+		Goleiro g2 = new Goleiro(2, "Uehudah Hack", 9, 6, 8, 8, 7, 10);
 		g2.setListaChute(carregarChute());
 		aux.add(g2);
-		Goleiro g3 = new Goleiro(3,"Edison Drye",5,8,5,8,10,7);
+		Goleiro g3 = new Goleiro(3, "Edison Drye", 5, 8, 5, 8, 10, 7);
 		g3.setListaChute(carregarChute());
 		aux.add(g3);
-		Goleiro g4 = new Goleiro(4,"Ajani Harding",6,6,5,8,7,6);
+		Goleiro g4 = new Goleiro(4, "Ajani Harding", 6, 6, 5, 8, 7, 6);
 		g4.setListaChute(carregarChute());
 		aux.add(g4);
-//		Goleiro g5 = new Goleiro();
-//		g5.setListaChute(carregarChute());
-//		Goleiro g6 = new Goleiro();
-//		g6.setListaChute(carregarChute());
-//		Goleiro g7 = new Goleiro();
-//		g7.setListaChute(carregarChute());
-//		Goleiro g8 = new Goleiro();
-//		g8.setListaChute(carregarChute());
-//		Goleiro g9 = new Goleiro();
-//		g9.setListaChute(carregarChute());
-//		Goleiro g10 = new Goleiro();
-//		g10.setListaChute(carregarChute());
-//		Goleiro g11 = new Goleiro();
-//		g11.setListaChute(carregarChute());
-//		Goleiro g12 = new Goleiro();
-//		g12.setListaChute(carregarChute());
-//		Goleiro g13 = new Goleiro();
-//		g13.setListaChute(carregarChute());
-//		Goleiro g14 = new Goleiro();
-//		g14.setListaChute(carregarChute());
-//		Goleiro g15 = new Goleiro();
-//		g15.setListaChute(carregarChute());
-//		Goleiro g16 = new Goleiro();
-//		g16.setListaChute(carregarChute());
-//		Goleiro g17 = new Goleiro();
-//		g17.setListaChute(carregarChute());
-//		Goleiro g18 = new Goleiro();
-//		g18.setListaChute(carregarChute());
-//		Goleiro g19 = new Goleiro();
-//		g19.setListaChute(carregarChute());
-//		Goleiro g20 = new Goleiro();
-//		g20.setListaChute(carregarChute());
-//		Goleiro g21 = new Goleiro();
-//		g21.setListaChute(carregarChute());
-//		Goleiro g22 = new Goleiro();
-//		g22.setListaChute(carregarChute());
-//		Goleiro g23 = new Goleiro();
-//		g23.setListaChute(carregarChute());
-//		Goleiro g24 = new Goleiro();
-//		g24.setListaChute(carregarChute());
-//		Goleiro g25 = new Goleiro();
-//		g25.setListaChute(carregarChute());
-		
+		Goleiro g5 = new Goleiro(5, "Orazio Hart", 5, 8, 7, 9, 9, 10);
+		g5.setListaChute(carregarChute());
+		aux.add(g5);
+		Goleiro g6 = new Goleiro(6, "Tristan Karns", 9, 7, 10, 7, 7, 6);
+		g6.setListaChute(carregarChute());
+		aux.add(g6);
+		Goleiro g7 = new Goleiro(7, "Niven Glaser", 10, 9, 7, 6, 5, 8);
+		g7.setListaChute(carregarChute());
+		aux.add(g7);
+		Goleiro g8 = new Goleiro(8, "Derwyn Devers", 10, 7, 9, 5, 9, 5);
+		g8.setListaChute(carregarChute());
+		aux.add(g8);
+		Goleiro g9 = new Goleiro(9, "Tod Phan", 10, 7, 7, 5, 5, 6);
+		g9.setListaChute(carregarChute());
+		aux.add(g9);
+		Goleiro g10 = new Goleiro(10, "Eddie Hulse", 7, 6, 5, 9, 7, 5);
+		g10.setListaChute(carregarChute());
+		aux.add(g10);
+		Goleiro g11 = new Goleiro(11, "Welford Yepez", 5, 8, 8, 7, 7, 8);
+		g11.setListaChute(carregarChute());
+		aux.add(g11);
+		Goleiro g12 = new Goleiro(12, "Rishley Snyder", 6, 5, 6, 5, 7, 6);
+		g12.setListaChute(carregarChute());
+		aux.add(g12);
+		Goleiro g13 = new Goleiro(13, "Milo Mccurdy", 10, 9, 8, 6, 10, 9);
+		g13.setListaChute(carregarChute());
+		aux.add(g13);
+		Goleiro g14 = new Goleiro(14, "Carden Justus", 8, 5, 8, 5, 10, 7);
+		g14.setListaChute(carregarChute());
+		aux.add(g14);
+		Goleiro g15 = new Goleiro(15, "Carlyon Gorby", 8, 5, 8, 8, 8, 6);
+		g15.setListaChute(carregarChute());
+		aux.add(g15);
+		Goleiro g16 = new Goleiro(16, "Mungo Spangler", 8, 10, 9, 8, 9, 5);
+		g16.setListaChute(carregarChute());
+		aux.add(g16);
+		Goleiro g17 = new Goleiro(17, "Whitmore Squires", 9, 10, 7, 9, 9, 10);
+		g17.setListaChute(carregarChute());
+		aux.add(g17);
+		Goleiro g18 = new Goleiro(18, "Pedrog Mccurdy", 8, 5, 10, 5, 7, 7);
+		g18.setListaChute(carregarChute());
+		aux.add(g18);
+		Goleiro g19 = new Goleiro(19, "Ridgley Leo", 8, 8, 8, 9, 9, 9);
+		g19.setListaChute(carregarChute());
+		aux.add(g19);
+		Goleiro g20 = new Goleiro(20, "Bolton Tarin", 9, 8, 7, 6, 9, 10);
+		g20.setListaChute(carregarChute());
+		aux.add(g20);
+		Goleiro g21 = new Goleiro(21, "Edison Loy", 7, 7, 5, 10, 10, 7);
+		g21.setListaChute(carregarChute());
+		aux.add(g21);
+		Goleiro g22 = new Goleiro(22, "Delling Herndon", 7, 5, 5, 8, 9, 9);
+		g22.setListaChute(carregarChute());
+		aux.add(g22);
+		Goleiro g23 = new Goleiro(23, "Senichi Iorio", 7, 7, 5, 8, 10, 5);
+		g23.setListaChute(carregarChute());
+		aux.add(g23);
+		Goleiro g24 = new Goleiro(24, "Albin Kerner", 6, 7, 8, 8, 9, 9);
+		g24.setListaChute(carregarChute());
+		aux.add(g24);
+		Goleiro g25 = new Goleiro(25, "Jivin Justus", 9, 10, 8, 7, 7, 5);
+		g25.setListaChute(carregarChute());
+		aux.add(g25);
+
 		return aux;
 	}
 
 	public static void main(String[] args) {
-		
+
 		Mapeamento m = new Mapeamento();
+
+		Selecao s1 = new Selecao("Itália");
+		s1.setListaGoleiro(carregarGoleiro());
+		Selecao s2 = new Selecao("Alemanha");
+		s2.setListaGoleiro(carregarGoleiro());
+		Selecao s3 = new Selecao("Brasil");
+		s3.setListaGoleiro(carregarGoleiro());
+		Selecao s4 = new Selecao("Espanha");
+		s4.setListaGoleiro(carregarGoleiro());
+		Selecao s5 = new Selecao("França");
+		s5.setListaGoleiro(carregarGoleiro());
+
+		System.out.println("Seleção: "+ s1.getNome());
+		for (int i = 0; i < 5; i++) {
+			s1.addGoleiro(carregarGoleiro().get(i));
+			System.out.println(s1.getListaGoleiro().get(i).getNome()); 
+		}
+		
+		System.out.println();
+		System.out.println("Seleção: "+ s2.getNome());
+		for (int i = 5; i < 10; i++) {
+			s2.addGoleiro(carregarGoleiro().get(i));
+			System.out.println(s2.getListaGoleiro().get(i).getNome()); 
+		}
+		
+		System.out.println();
+		System.out.println("Seleção: "+ s3.getNome());
+		for (int i = 10; i < 15; i++) {
+			s3.addGoleiro(carregarGoleiro().get(i));
+			System.out.println(s3.getListaGoleiro().get(i).getNome()); 
+		}
+		
+		System.out.println();
+		System.out.println("Seleção: "+ s4.getNome());
+		for (int i = 15; i < 20; i++) {
+			s4.addGoleiro(carregarGoleiro().get(i));
+			System.out.println(s4.getListaGoleiro().get(i).getNome()); 
+		}
+		
+		System.out.println();
+		System.out.println("Seleção: "+ s5.getNome());
+		for (int i = 20; i < 25; i++) {
+			s5.addGoleiro(carregarGoleiro().get(i));
+			System.out.println(s5.getListaGoleiro().get(i).getNome()); 
+		}
+
+//		for (Goleiro s : s1.getListaGoleiro()) {
+//			System.out.println(s1.getListaGoleiro().get(1).getNome());
+//			
+//		}
+//		
+//		System.out.println(s1.getListaGoleiro().get(1).getNome());
+		
 		m.mapear();
 		m.imprimir();
-		
 
+		s1.calculaGol(s1);
+		for (Goleiro goleiro : s1.getListaGoleiro()) {
+			s1.calculaGol(s1);
+			System.out.println(goleiro.pontos(goleiro));
+			System.out.println(s1.titular(s1));
+		}
+		
+		for (int i = 0; i < 25; i++) {
+			s1.getListaGoleiro().get(i).ondeAcertou(s1.getListaGoleiro().get(i));
+		}
 	}
 
 }
